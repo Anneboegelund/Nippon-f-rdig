@@ -1,0 +1,1011 @@
+*{  margin:0px;
+    padding: 0px;}
+
+/*opsætning af header*/
+
+
+/*banner i toppen*/
+
+#banner{
+    justify-content:center;
+    text-align: center;
+
+    
+
+    height: 30px;
+    width: 100%;
+
+    background-color: #767c70;
+}
+
+
+#banner p{
+    font-size: 15px;
+    color: #dedad2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5px;
+    letter-spacing: 2px;
+}
+
+
+/*header*/
+
+header{
+   
+    align-items: center;
+    display: flex;
+    
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 150px;
+
+    background-color: #dedad2;
+   /* border-bottom: 2px solid #782f2f;*/
+    
+    
+}
+
+
+header nav {
+    
+    font-size: 20px;
+    align-items: center;
+
+    text-align: center;
+    justify-content: center;
+}
+
+
+header nav a{
+    text-decoration: none;
+    color:#782f2f;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+    
+  
+    
+}
+
+header a img, header img{
+    
+    width: 100%;
+    
+    
+}
+
+
+
+/*Jeg har fundet denne CSS i vores gamle kode fra vores fodbold site*/
+/*Jeg har tilpasset CSS´en så den passer til designet på mit site*/
+
+/* Billeder skal fylde 100*% i deres container: 
+Logo og burger */
+#logo > img{
+    width:100%;
+}
+
+#navMobile > a > img{
+    width:100%; 
+}
+
+/* RESPONSIVE: */
+/* MOBIL: */
+@media screen and (max-width:927px){
+    /*Distribuer elementer anderledes:*/
+    header{
+        justify-content:space-between ;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    
+    /* Skjul laptopmenuen. */
+    #navLaptop {
+        display:none; 
+    }
+
+    /* Burgermenuen skal have en bredde */
+    #navMobile{ 
+        width:50px;
+    }
+
+    #Logo{ /* Logoet skal være mindre på mobil. */
+      display: none;
+        
+    }    
+
+    #banner{
+        display: none;
+    }
+}
+
+/* LAPTOP: */
+@media screen and (min-width: 927px){
+    /* HEADER: LOGO*/
+    #Logo {/* Logoet. Er i en div fordi det spiller bedre med flexbox. */
+        
+        height: 50%;
+    }
+
+    /* Skjul mobilmenuen.*/
+    #navMobile{
+        display:none;
+    }
+
+    /* Vis laptopmenuen og samtidig gør den til flex container. */
+    #navLaptop {
+        display:flex; 
+        justify-content:space-around;
+        width:70%;
+        gap:10px;
+        
+    }
+
+ 
+}
+
+
+
+/*Opsætning af footer*/
+
+footer {
+    
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 400px;
+
+    background-color: #dedad2;
+}
+
+
+.flexboxfooter {
+    display: flex;
+    padding-top: 7%;
+}
+
+.flexboxfooter p {
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color:#782f2f;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.tekst {
+    padding: 4%;
+}
+
+@media only screen and (max-width: 927px) {
+    .flexboxfooter{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        height: 680px;
+        background-color:#dedad2;
+
+        
+    }
+
+    .flexboxfooter img{
+        width: 500px;
+    }
+}
+
+
+/*Første section på forsiden*/
+
+.forsidestart {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    height: 600px;
+    padding: 5%;
+   
+
+    background-color: #dedad2;
+    border-top: 1px solid #782f2f;
+}
+
+.forsidestart h1{
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: #782f2f;
+    width: 40%;
+}
+
+.forsidestart p{
+    font-size: 20px;
+    color: #782f2f;
+    width: 55%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.forsidestart button{
+   
+    background-color:#782f2f;
+    color:#dedad2;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    border: 1px;
+    border-radius: 12px;
+    
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .forsidestart button:hover{
+    background-color: #dedad2;
+    color: #782f2f;
+    transform: scale(1.1);
+    border-style:solid;
+    border-color:#782f2f ;
+
+  }
+
+.forsidestart img{
+    border-radius: 12px;
+}
+
+
+@media only screen and (max-width: 927px) {
+    .forsidestart{
+        display: flex;
+        flex-wrap: wrap;
+        height: 1100px;
+        background-color:#dedad2;
+        justify-content: center;
+    }
+
+    .forsidestart img{
+        height: 400px;
+        
+    }
+}
+
+
+
+/*Opsætning af værdier*/
+
+.værdier{
+    height: 400px;
+    background-color: #767c70;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.værdier button{
+   
+    background-color:#dedad2;
+    color:#782f2f;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    border: 1px;
+    border-radius: 12px;
+    
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (max-width: 927px) {
+    .værdier{
+        display: flex;
+        flex-wrap: wrap;
+        height: 1100px;
+        background-color:#767c70;
+        
+    }
+}
+
+  .værdier button:hover{
+    background-color: #782f2f;
+    color: #dedad2;
+    transform: scale(1.1);
+    border-style:solid;
+    border-color:#dedad2;
+
+  }
+
+
+  .værdier h1{
+
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color:#dedad2;
+    
+   
+    text-align: center;
+    justify-content: center;
+    padding-top: 4%;
+
+}
+
+.værdier h2{
+
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: #dedad2;
+    
+   
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 4%;
+
+}
+
+
+
+
+/*Java til værdier*/
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background-color:#dedad2;
+    opacity: 0.9;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: #782f2f;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+
+  
+
+/*Opsætning af levering*/
+
+.levering {
+    background-color:#782f2f;
+    height: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    padding: 1%;
+}
+
+
+.levering p{
+    text-align: center;
+    font-size: 25px;
+    
+    
+    color:#dedad2;
+}
+
+.levering h1{
+    text-align: center;
+    font-size: 25px;
+    color: #dedad2;
+    font-weight: lighter;
+    
+}
+
+
+@media only screen and (max-width: 927px) {
+    .levering{
+        height: 110px;
+       
+    }
+
+    
+}
+
+
+
+
+/*Opsætning af måltidskassebox*/
+
+.måltidskassebox {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+
+    height: 600px;
+   
+   
+
+    background-color: #a8a99f;
+}
+
+
+#måltidskasse{
+
+    height: 450px;
+    background-color: #dedad2;
+    padding: 1%;
+    border-radius: 12px;
+    
+    
+    
+}
+
+.måltidskassebox h1{
+
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: #782f2f;
+    
+   
+    text-align: center;
+    justify-content: center;
+    padding-top: 4%;
+
+}
+
+.måltidskassebox h2{
+
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: #782f2f;
+    
+   
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 4%;
+
+}
+
+
+.måltidskassebox button{
+   
+    background-color:#782f2f;
+    color:#dedad2;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    border: 1px;
+    border-radius: 12px;
+    
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+
+  .måltidskassebox button:hover{
+    background-color: #dedad2;
+    color: #782f2f;
+    transform: scale(1.1);
+    border-style:solid;
+    border-color:#782f2f ;
+
+  }
+
+
+  .måltidskassebox img{
+    border-radius: 12px;
+}
+
+.mttekst{
+
+    height: 200px;
+    background-color:#a8a99f;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+.mttekst h1{
+
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:normal;
+    color: #782f2f;
+    text-align: center;
+    padding-bottom: 2%;
+    
+    
+
+}
+
+.mttekst button{
+   
+    background-color:#782f2f;
+    color:#dedad2;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    border: 1px;
+    border-radius: 12px;
+    
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .mttekst button:hover{
+    background-color: #dedad2;
+    color: #782f2f;
+    transform: scale(1.1);
+    border-style:solid;
+    border-color:#782f2f ;
+
+  }
+
+
+
+  @media only screen and (max-width: 927px) {
+    .måltidskassebox{
+        display: flex;
+        flex-wrap: wrap;
+        height: 1500px;
+        background-color:#a8a99f;
+        
+    }
+}
+
+
+
+/*Opsætning af konkurrence section*/
+
+
+.konkurrence {
+
+    height: 400px;
+    background-color:#767c70;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+
+@media only screen and (max-width: 927px) {
+    .konkurrence{
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+        background-color:#767c70;
+       
+        
+    }
+
+    .konkurrence img{
+
+        width: 100%;
+    }
+
+ 
+
+   
+}
+
+
+.konkurrence h1{
+
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    color: #782f2f;
+    
+   
+    text-align: center;
+    justify-content: center;
+    padding-top: 4%;
+
+}
+
+.konkurrence h2{
+
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    color: #782f2f;
+    
+    
+   
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    
+
+}
+
+
+
+.konkurrence p{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: #782f2f;
+    width: 60%;
+    
+   
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 4%;
+    padding-left: 20%;
+
+
+}
+#tekstside{
+
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+   
+    
+}
+
+.konkurrence button{
+   
+    background-color:#782f2f;
+    color:#dedad2;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    border: 1px;
+    border-radius: 12px;
+    
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+  }
+
+  .konkurrence button:hover{
+    background-color: #dedad2;
+    color: #782f2f;
+    transform: scale(1.1);
+    border-style:solid;
+    border-color:#782f2f ;
+
+  }
+
+
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    
+  }
+
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+   
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #782f2f;
+  }
+  
+
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+   .signupbtn {
+       width: 100%;
+    }
+  }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 60%; /* Full width */
+    height: 60%;/* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #dedad2;
+    margin-left: 20%;
+    border: 3px solid #782f2f;
+   
+   
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 600px;
+  }
+  
+
+
+
+
+/* Videoen på forsiden */
+
+.video {
+  
+    height:300px;
+    background-color: #dedad2;
+    padding-top: 2%;
+    padding-left: 33%;
+    
+  }
+  
+  .containervideo {
+    
+    background-color:#dedad2;
+    height: 250px;
+    
+  }
+
+  @media only screen and (max-width: 927px) {
+    .video{
+        padding-left: 20px;
+    }
+
+   
+}
+/*Burgersiden*/
+
+  #navburger{
+    width:100%;
+    background-color:#dedad2;
+    height: 2000px;
+
+    display:flex;            
+    align-items:center;
+    flex-direction:column;
+    gap:10px;
+}
+
+#navburger a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:15pt;
+    color:#782f2f;
+    width:100%;
+    text-align:center;
+    padding: 3%;
+}
+
+
+
+/*javascript*/
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color:#782f2f;
+    color:#dedad2;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #782f2f;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color:#dedad2;
+    color: #782f2f;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background:azure;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color:#a8a99f;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color:#767c70;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color:#782f2f;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+
+
+  /*---------------------------------------------------------------------------------------------*/
+
+
+
+
+  /* Her starter CSS til miljø siden */
+
+  /* Opsætning af infografik billed section*/
+
+  .infografik {
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background-color: #dedad2;
+    border-top: 1px solid #782f2f;
+    
+  }
+
+
+.infografik img{
+
+    justify-content: center;
+    align-items: center;
+    padding-left:20% ;
+    padding-top:5% ;
+    
+}
+
+@media only screen and (max-width: 927px) {
+    .infografik img{
+        width: 100%;
+        padding: 0%;
+    }
+}
+
+
+.miljoe{
+
+    background-color: #767c70;
+    padding-bottom: 4%;
+    
+}
+
+.miljoe h1{
+
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    color:#dedad2;
+    
+   
+    text-align: center;
+    justify-content: center;
+    padding-top: 4%;
+
+}
+
+.miljoe p{
+
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    color: #dedad2;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 1%;
+    
+    
+    
+   
+    text-align: center;
+    justify-content: center;
+  
+    
+    
+   
+    
+
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
+
